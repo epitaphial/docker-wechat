@@ -73,6 +73,8 @@ function pullUpdate () {
 function main () {
 
   hello
+  sudo rm /usr/lib/i386-linux-gnu/libGL.so.1 && echo "rm" || echo "already done"
+  setupFontDpi
   pullUpdate
 
   DEVICE_ARG=()
